@@ -1,0 +1,65 @@
+function startchat (id)
+{
+    document.getElementById('chatpanel').removeAttribute('style');
+    document.getElementById('divstart').setAttribute('style','display:none');
+
+}
+
+    /*function onkeydown()
+ {
+     document.addEventListener('keypress', function (key){
+      if(key.which ===13)
+      {
+        sendmessage();
+      }
+     });
+ }*/
+
+ $('#txtmessage').keypress(function(key){
+    if(key.which ===13)
+    {
+    
+    sendmessage();
+    }
+    else
+    {
+        
+    }
+ })
+     
+
+ 
+
+ function sendmessage()
+ {
+     
+     var message = `
+           
+             <div class="row justify-content-end">
+
+                <div class="col-4 col-sm-5 col-md-5">
+                    <p class="sent float-right">this is text from anywhere
+                       ${document.getElementById('txtmessage').value}
+                        <span class="time float-right">1:28 pm</span>
+                    </p>
+                </div>
+
+                
+                <div class="col-2 col-sm-1 col-md-1">
+                    <img src="noimage.png" class="profilepic">
+                </div>
+             </div> 
+              
+     
+             `;
+
+
+   document.getElementById('messages').innerHTML +=message;
+   document.getElementById('txtmessage').value='';
+   document.getElementById('txtmessage').focus();
+ }
+ //////////////////////////////////
+ function signin(){
+     var provider = new firebase.auth.GoogleAuthProvider();
+     firebase.auth().signInWithPopup(provider);
+ }

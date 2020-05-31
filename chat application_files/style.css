@@ -1,0 +1,102 @@
+body ,html
+{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+body
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(282 deg,#dddbd1,#d2dbdc,);
+}
+.top{
+ height: 120px;
+ width: 100%;
+ background-color: #009688;
+ position: fixed;    
+ z-index: -1;
+}
+.chatbox
+{
+    height: 90%;
+    width: 95%;
+    margin-top: 70px;
+    padding: 0;
+
+}
+
+img.whatappi {
+    height: 55px;
+    border-radius: 62%;
+    margin: 9px;
+    margin-left: 134px;
+}
+.profilepic
+{
+    width: 40px;
+    height: 40px;
+}
+
+.from-rouned
+{
+    border-radius: 1rem;
+}
+.frined-pic{
+    height: 50px;
+    width: 50px;
+
+}
+.name
+{
+    font-weight: 400;
+    color: black;
+
+}
+.under-name
+{
+    font-size: 12px;
+    line-height: 15px;
+    max-height: 15px;
+}
+
+.icon
+{
+    font-size: 20px;
+    color: lightgrey;
+    
+}
+.receive
+{
+    background-color: lightgreen;
+    border-radius: 1rem;
+    padding: 10px 15px;
+    display: inline-block;
+
+}
+
+.sent
+{
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    padding: 10px 15px;
+    display: inline-block;
+
+}
+
+.time
+{
+    font-size: 10px;
+    color: #9ca1a3;
+    margin-top: 12%;
+    margin-left: 1px;
+}
+#textmessage
+{
+    position: fixed;
+}
+.whatappicon
+{
+    font-size: 25px;
+}
